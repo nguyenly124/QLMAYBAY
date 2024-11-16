@@ -7,7 +7,10 @@ namespace QLMAYBAY
     internal class Ketnoi
     {
         string conStr = @"Data Source=MSI;Initial Catalog=QLMAYBAY;Integrated Security=True;";
-        SqlConnection conn;
+        
+        private SqlConnection conn;
+
+        public SqlConnection Connection { get { return conn; } }
         public Ketnoi()
         {
             conn = new SqlConnection(conStr);

@@ -30,6 +30,7 @@
         {
             hienthimaybay = new DataGridView();
             label1 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)hienthimaybay).BeginInit();
             SuspendLayout();
             // 
@@ -39,7 +40,7 @@
             hienthimaybay.Location = new Point(115, 71);
             hienthimaybay.Name = "hienthimaybay";
             hienthimaybay.RowHeadersWidth = 51;
-            hienthimaybay.Size = new Size(558, 339);
+            hienthimaybay.Size = new Size(558, 281);
             hienthimaybay.TabIndex = 0;
             // 
             // label1
@@ -52,11 +53,22 @@
             label1.TabIndex = 1;
             label1.Text = "Danh sách máy bay ";
             // 
+            // button1
+            // 
+            button1.Location = new Point(579, 389);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 2;
+            button1.Text = "Thoát ";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // FormMayBay
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(hienthimaybay);
             Name = "FormMayBay";
@@ -71,5 +83,6 @@
 
         private DataGridView hienthimaybay;
         private Label label1;
+        private Button button1;
     }
 }

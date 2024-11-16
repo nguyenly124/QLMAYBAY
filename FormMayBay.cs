@@ -16,10 +16,10 @@ namespace QLMAYBAY
         {
             InitializeComponent();
         }
-        Ketnoi kn=new Ketnoi();
+        Ketnoi kn = new Ketnoi();
         private void FormMayBay_Load(object sender, EventArgs e)
         {
-           getData();
+            getData();
         }
         public void getData()
         {
@@ -41,6 +41,11 @@ namespace QLMAYBAY
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
